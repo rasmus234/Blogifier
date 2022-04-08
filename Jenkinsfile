@@ -22,7 +22,7 @@ pipeline {
         }
         stage("Execute UI tests") {
             steps {
-                // Find a way to let Jenkins execute your TestCafé tests here
+                echo "Find a way to let Jenkins execute your TestCafé tests here"
             }
             post {
                 always {
