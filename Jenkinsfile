@@ -21,7 +21,9 @@ pipeline {
             }
         }
         stage("Execute UI tests") {
-            // Find a way to let Jenkins execute your TestCafé tests here
+            steps {
+                // Find a way to let Jenkins execute your TestCafé tests here
+            }
             post {
                 always {
                     archiveArtifacts artifacts: "${SCREENSHOT_PATH}/**", allowEmptyArchive: true
