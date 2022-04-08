@@ -1,0 +1,26 @@
+{
+  "name": "blogifier",
+  "version": "1.0.0",
+  "description": "<br>\r <p align=\"center\">\r   <a href=\"https://blogifier.net/\">\r     <img src=\"https://blogifier.net/files/brand/logo.svg\" alt=\"Blogifier Logo\" width=\"100\" height=\"100\">\r   </a>\r </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasmus234/Blogifier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasmus234/Blogifier/issues"
+  },
+  "homepage": "https://github.com/rasmus234/Blogifier#readme",
+  "devDependencies": {
+    "testcafe": "^1.18.5"
+  }
+}
