@@ -22,7 +22,14 @@ pipeline {
         }
         stage("Execute UI tests") {
             steps {
-                echo "Find a way to let Jenkins execute your TestCafé tests here"
+                dir("outputs") {
+                    sh "dotnet Blogifier.dll"
+                }
+
+                dir("tests/ui") {
+                    sh "npx testcafe chrome:headless register.js"
+                    sh "npx testcafe chrome:headless login.js"
+                }
             }
             post {
                 always {
