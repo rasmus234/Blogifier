@@ -22,6 +22,8 @@ pipeline {
         }
         stage("Execute UI tests") {
             steps {
+                sh "npm install"
+
                 dir("tests/ui") {
                     sh "npx testcafe chrome:headless register.js"
                     sh "npx testcafe chrome:headless login.js"
