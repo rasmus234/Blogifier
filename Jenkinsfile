@@ -23,7 +23,7 @@ pipeline {
         stage("Execute UI tests") {
             steps {
                 dir("outputs") {
-                    sh "nohup dotnet Blogifier.dll"
+                    sh "nohup dotnet Blogifier.dll > /dev/null 2>&1 &"
                 }
 
                 dir("tests/ui") {
