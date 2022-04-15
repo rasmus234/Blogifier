@@ -4,4 +4,4 @@ services:
   blogifier:
     build: .
     ports:
-      - "9888:80"
+      - "5000:80"

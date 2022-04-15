@@ -22,10 +22,6 @@ pipeline {
         }
         stage("Execute UI tests") {
             steps {
-                dir("outputs") {
-                    sh "nohup dotnet Blogifier.dll > /dev/null 2>&1 &"
-                }
-
                 dir("tests/ui") {
                     sh "npx testcafe chrome:headless register.js"
                     sh "npx testcafe chrome:headless login.js"
